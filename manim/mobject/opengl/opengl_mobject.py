@@ -164,7 +164,7 @@ class OpenGLMobject:
         raise NotImplementedError
 
     def __iadd__(self, mobject):
-        raise NotImplementedError
+        return NotImplemented
 
     @classmethod
     def set_default(cls, **kwargs):
