@@ -20,7 +20,7 @@ __all__ = [
     "get_shaded_rgb",
 ]
 
-import random
+import secrets
 from enum import Enum
 from typing import Iterable
 
@@ -535,7 +535,7 @@ def random_bright_color() -> Color:
 
 
 def random_color() -> Color:
-    return random.choice([c.value for c in list(Colors)])
+    return secrets.choice([c.value for c in list(Colors)])
 
 
 def get_shaded_rgb(
